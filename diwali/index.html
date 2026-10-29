@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Diwali Boxes | The Kind Oven</title>
-<meta name="description" content="Diwali boxes of millet brownies and cookies. No maida, no refined sugar, 100% eggless. Order on WhatsApp for delivery or pickup in Powai.">
+<meta name="description" content="Diwali boxes of millet brownies and cookies. No maida, no refined sugar, 100% eggless. Order on WhatsApp for delivery or pickup in Thane.">
 <meta name="theme-color" content="#1f5c4a">
 <link rel="canonical" href="https://thekindoven.in/diwali/">
 <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -190,7 +190,7 @@ button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
       <li>No deliveries or pickups on 8, 9, 10 and 11 Nov.</li>
       <li>We confirm your order and delivery slot on WhatsApp.</li>
       <li>Pay by GPay once we confirm.</li>
-      <li>Delivery by Porter at actual cost, or free pickup from One Hiranandani Park, Powai.</li>
+      <li>Delivery by Porter at actual cost, or free pickup from One Hiranandani Park, Thane.</li>
       <li>Ordering 10 or more boxes? Message us for bulk orders.</li>
     </ul>
     <div class="phone">WhatsApp <a href="https://wa.me/919819062712" target="_blank" rel="noopener"><strong id="num">98190 62712</strong></a><button type="button" class="ghost" id="copy">Copy</button></div>
@@ -256,7 +256,7 @@ function renderLines(){
     : `<p class="empty">Tap ADD on any box above to start.</p>`);
   const n = keys.reduce((s,k)=>s+qty[k],0), t = keys.reduce((s,k)=>s+info(k).price*qty[k],0);
   $("#grand").textContent = rs(t);
-  $("#grandNote").textContent = mode==="delivery" ? "Plus Porter delivery at actual cost. Pay by GPay once we confirm." : "Free pickup from One Hiranandani Park, Powai. Pay by GPay once we confirm.";
+  $("#grandNote").textContent = mode==="delivery" ? "Plus Porter delivery at actual cost. Pay by GPay once we confirm." : "Free pickup from One Hiranandani Park, Thane. Pay by GPay once we confirm.";
   $("#bar").hidden = n===0 || inCheckout;
   $("#barCount").textContent = `${n} box${n>1?"es":""} added`;
   $("#barTotal").textContent = rs(t) + (mode==="delivery" ? " + delivery" : "");
